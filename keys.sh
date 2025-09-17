@@ -20,5 +20,5 @@ for key in ../../../build/make/target/product/security/*.pk8; do
 done
 
 for key in $(grep -o :\.\*override keys.mk | sort -u); do
-    ./make_key.sh ${key:1} 4096
+    ./make_key.sh ${key:1}
 done
